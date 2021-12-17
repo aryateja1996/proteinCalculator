@@ -342,10 +342,12 @@ class _CalculatorState extends State<Calculator> {
                 Row(
                   children: [
                     Checkbox(
-                        value: isChecked,
+                        value: male,
                         onChanged: (value) {
                           setState(() {
                             male = value!;
+                            
+                            print(male);
                           });
                         }),
                     Text('Male'),
@@ -353,9 +355,10 @@ class _CalculatorState extends State<Calculator> {
                       width: 20,
                     ),
                     Checkbox(
-                        value: isChecked,
+                        value: female,
                         onChanged: (value) {
                           setState(() {
+                            
                             female = value!;
                           });
                         }),
